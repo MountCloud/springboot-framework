@@ -44,6 +44,7 @@ public abstract class BaseDao<T extends BaseEntity, D extends BaseMapper>
 	 * 查询总数
 	 * 
 	 * @param example 条件辅助类
+	 * @param <E> example的泛型
 	 * @return 总数
 	 */
 	public <E extends BaseExample> Long listCount(E example) {
@@ -54,6 +55,7 @@ public abstract class BaseDao<T extends BaseEntity, D extends BaseMapper>
 	 * 查找用户，根据vo
 	 * 
 	 * @param example 条件辅助类
+	 * @param <E> 查询类的泛型
 	 * @return AdminUser集合
 	 */
 	public <E extends BaseExample> List<T> list(E example) {
@@ -64,7 +66,7 @@ public abstract class BaseDao<T extends BaseEntity, D extends BaseMapper>
 	/**
 	 * 查找用户，根据example
 	 * @param example 查询条件
-	 * @param <E> 查询条件的类型
+	 * @param <E> 查询类的泛型
 	 * @return 查询结果
 	 */
 	public <E extends BaseExample> T listOne(E example){

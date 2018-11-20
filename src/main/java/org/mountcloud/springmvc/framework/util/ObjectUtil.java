@@ -22,13 +22,14 @@ public class ObjectUtil {
 	private static final Logger LOG = LoggerFactory.getLogger(ObjectUtil.class);
 
 	/**
-	 * 以源对象中的非空属 覆盖目标对象中的属</br> <b>PS</b>：对象需相同类型
+	 * 以源对象中的非空属,覆盖目标对象中的属</br> <b>PS</b>：对象需相同类型
 	 * 
 	 * @param target 目标对象 --PS:为数据库对象
 	 * @param source 源对象--PS:为提交上对象
+	 * @param <T> 实体类
 	 * @return 最终对象
-	 * @throws IllegalAccessException
-	 * @throws InstantiationException
+	 * @throws IllegalAccessException 异常
+	 * @throws InstantiationException 异常
 	 */
 	public static <T> T cover(Object target, Object source)
 			throws InstantiationException, IllegalAccessException {
@@ -46,13 +47,14 @@ public class ObjectUtil {
 	}
 	
 	/**
-	 * 以源对象中的非空属 覆盖目标对象中的属</br> <b>PS</b>：对象需相同类型
+	 * 以源对象中的非空属,覆盖目标对象中的属</br> <b>PS</b>：对象需相同类型
 	 * 
 	 * @param target 目标对象 --PS:为数据库对象
 	 * @param source 源对象--PS:为提交上对象
+	 * @param <T> 实体类
 	 * @return 最终对象
-	 * @throws IllegalAccessException
-	 * @throws InstantiationException
+	 * @throws IllegalAccessException 异常
+	 * @throws InstantiationException 异常
 	 */
 	public static <T> T coverAndString(Object target, Object source)
 			throws InstantiationException, IllegalAccessException {
@@ -130,8 +132,9 @@ public class ObjectUtil {
 	 * 
 	 * @param fieldName 属性名
 	 * @param obj 类
+	 * @param <T> 需要返回的实体
 	 * @return 获取属性中的值
-	 * @throws Exception
+	 * @throws Exception 出现了异常
 	 */
 	@SuppressWarnings("unchecked")
 	public static <T> T getObjectValue(String fieldName, Object obj)
@@ -173,7 +176,7 @@ public class ObjectUtil {
 	 * @param obj 类
 	 * @param methodName 方法名称
 	 * @param pcls obj的class
-	 * @return
+	 * @return 返回方法
 	 */
 	public static Method getMethod(Object obj,String methodName,Class<?> ...pcls){
 		
@@ -209,6 +212,7 @@ public class ObjectUtil {
 	/**
 	 * 给空属性附上默认值
 	 * @param objs 实体
+	 * @param <T> 返回的类型
 	 * @param notSet 不需要设置默认值的属性名
 	 */
 	public static <T> void setNullFields(List<T> objs,List<String> notSet){
@@ -220,6 +224,7 @@ public class ObjectUtil {
 	/**
 	 * 将空属性附上默认值
 	 * @param obj 实体
+	 * @param <T> 返回的类型
 	 * @param notSet 不需要设置默认值的实体
 	 */
 	public static <T> void setNullFields(T obj, List<String> notSet){

@@ -134,9 +134,11 @@ public abstract class BaseService<T extends BaseEntity, D extends BaseDao<T, ?>>
 
 	/**
 	 * 获取example的虚拟类
+	 * @param bean 实体
+	 * @param <E> 实体类型
 	 * @return 查询条件
 	 */
-	public abstract <E extends BaseExample> E getExample(T vo);
+	public abstract <E extends BaseExample> E getExample(T bean);
 
 	/**
 	 * 判断list是不是空
