@@ -116,7 +116,7 @@ public abstract class BaseDao<T extends BaseEntity, D extends BaseMapper>
 	/**
 	 * 更新实体类，根据bean，仅更新非空属性
 	 * @param bean 实体
-	 * @return
+	 * @return 更新结果
 	 */
 	public int updateSelective(T bean) {
 		return mapper.updateByPrimaryKeySelective(bean);
@@ -125,6 +125,7 @@ public abstract class BaseDao<T extends BaseEntity, D extends BaseMapper>
 	/**
 	 * 自定义查询
 	 * @param example 查询条件
+	 * @param <E> example
 	 * @return 查询结果
 	 */
 	public <E extends BaseExample> List listCustom(E example){

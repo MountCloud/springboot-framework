@@ -22,7 +22,7 @@ public class ObjectUtil {
 	private static final Logger LOG = LoggerFactory.getLogger(ObjectUtil.class);
 
 	/**
-	 * 以源对象中的非空属,覆盖目标对象中的属</br> <b>PS</b>：对象需相同类型
+	 * 以源对象中的非空属,覆盖目标对象中的属PS：对象需相同类型
 	 * 
 	 * @param target 目标对象 --PS:为数据库对象
 	 * @param source 源对象--PS:为提交上对象
@@ -47,7 +47,7 @@ public class ObjectUtil {
 	}
 	
 	/**
-	 * 以源对象中的非空属,覆盖目标对象中的属</br> <b>PS</b>：对象需相同类型
+	 * 以源对象中的非空属,覆盖目标对象中的属PS：对象需相同类型
 	 * 
 	 * @param target 目标对象 --PS:为数据库对象
 	 * @param source 源对象--PS:为提交上对象
