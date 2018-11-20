@@ -5,6 +5,12 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ * String工具
+ * @author zhanghaishan
+ * @version V1.0
+ * date 2015/06/12.
+ */
 public class StringUtil {
 
 	/**

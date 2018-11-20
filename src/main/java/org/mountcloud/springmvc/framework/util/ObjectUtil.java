@@ -1,6 +1,5 @@
 package org.mountcloud.springmvc.framework.util;
 
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -14,11 +13,10 @@ import java.util.Date;
 import java.util.List;
 
 /**
+ * Object工具类
  * @author zhanghaishan
  * @version V1.0
- * @Package com.ugirls.common.util
- * @Description: TODO Object工具类
- * @date 2015/06/12.
+ * date 2015/06/12.
  */
 public class ObjectUtil {
 	private static final Logger LOG = LoggerFactory.getLogger(ObjectUtil.class);

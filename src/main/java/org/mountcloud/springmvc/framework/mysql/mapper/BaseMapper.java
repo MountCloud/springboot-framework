@@ -7,13 +7,10 @@ import org.mountcloud.springmvc.framework.mysql.entity.BaseExample;
 import java.util.List;
 
 /**
- * 
-* @Title: BaseMapper.java 
-* @Package com.coconet.common.mapper 
-* @Description: TODO
-* @author zhanghaishan
-* @date 2017年8月22日 下午5:00:39 
-* @version V1.0
+ * Dao层Mapper的父类
+ * @author zhanghaishan
+ * @version V1.0
+ * date 2017年8月22日 下午5:00:39
  */
 public interface BaseMapper {
 

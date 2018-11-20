@@ -8,13 +8,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import java.util.List;
 
 /**
- * 
-* @Title: BaseService.java 
-* @Package com.coconet.common.service 
-* @Description: TODO 与数据库相关的服务父类，包含很多基础操作
-* @author zhanghaishan
-* @date 2017年8月22日 下午5:00:43 
-* @version V1.0
+ * 与数据库相关的服务父类，包含很多基础操作
+ * @author zhanghaishan
+ * @version V1.0
+ * date 2017年8月22日 下午5:00:43
  */
 public abstract class BaseService<T extends BaseEntity, D extends BaseDao<T, ?>> {
 	@Autowired
@@ -22,7 +19,8 @@ public abstract class BaseService<T extends BaseEntity, D extends BaseDao<T, ?>>
 
 	/**
 	 * 通用删除方法，根据id
-	 * @param id
+	 * @param id ID
+	 * @return 删除结果
 	 */
 	public boolean delete(int id) {
 		return generalDao.delete(id) > 0;
@@ -65,8 +63,8 @@ public abstract class BaseService<T extends BaseEntity, D extends BaseDao<T, ?>>
 	/**
 	 * 根据主键查询
 	 * 
-	 * @param id
-	 * @return
+	 * @param id ID
+	 * @return 查询结果
 	 */
 	public T listById(Object id) {
 		return generalDao.listById(id);
@@ -76,7 +74,7 @@ public abstract class BaseService<T extends BaseEntity, D extends BaseDao<T, ?>>
 	 * 保存实体bean
 	 * 
 	 * @param bean 实体bean
-	 * @throws Exception
+	 * @return 保存结果
 	 */
 	public boolean save(BaseEntity bean) {
 		return generalDao.save(bean) > 0;
@@ -86,7 +84,7 @@ public abstract class BaseService<T extends BaseEntity, D extends BaseDao<T, ?>>
 	 * 保存实体bean
 	 * 
 	 * @param bean 实体bean
-	 * @throws Exception
+	 * @return 保存结果
 	 */
 	public boolean saveSelective(BaseEntity bean) {
 		return generalDao.saveSelective(bean);
@@ -95,6 +93,7 @@ public abstract class BaseService<T extends BaseEntity, D extends BaseDao<T, ?>>
 	/**
 	 * 更新实体类，根据bean
 	 * @param bean 实体bean
+	 * @return 更新结果
 	 */
 	public boolean update(T bean) {
 		return generalDao.update(bean) > 0;
@@ -104,12 +103,17 @@ public abstract class BaseService<T extends BaseEntity, D extends BaseDao<T, ?>>
 	 * 更新实体类，根据bean
 	 * 
 	 * @param bean 实体bean
+	 * @return 更新结果
 	 */
 	public boolean updateSelective(T bean) {
 		int num = generalDao.updateSelective(bean);
 		return num > 0;
 	}
 
+	/**
+	 * 提供dao
+	 * @return dao
+	 */
 	public D getGeneralDao() {
 		return generalDao;
 	}
@@ -138,7 +142,7 @@ public abstract class BaseService<T extends BaseEntity, D extends BaseDao<T, ?>>
 	 * 判断list是不是空
 	 * @param list 数组
 	 * @param <T> 数组类型
-	 * @return
+	 * @return 返回结果
 	 */
 	public <T> boolean listIsNull(List<T> list){
 		if(list==null||list.size()==0){

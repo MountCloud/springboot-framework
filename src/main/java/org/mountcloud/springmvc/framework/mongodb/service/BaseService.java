@@ -10,11 +10,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * mongodb夫服务
  * @author zhanghaishan
  * @version V1.0
- * @Package com.ugirls.common.service
- * @Description: TODO 封装一下父类，以后简单的查询起码不需要重复写了
- * @date 2018/1/26.
+ * date 2018/1/26.
  */
 public class BaseService<E extends BaseEntity,S extends MongoRepository<E,?>>{
 

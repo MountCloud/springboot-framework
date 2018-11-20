@@ -10,13 +10,10 @@ import java.lang.reflect.ParameterizedType;
 import java.util.List;
 
 /**
- * 
-* @Title: BaseDao.java 
-* @Package com.coconet.common.dao 
-* @Description: TODO 所有与数据库相关的Dao均继承次Dao
-* @author zhanghaishan
-* @date 2017年8月22日 下午5:00:27 
-* @version V1.0
+ * 所有与数据库相关的Dao均继承次Dao
+ * @author zhanghaishan
+ * @version V1.0
+ * date 2017年8月22日 下午5:00:27
  */
 public abstract class BaseDao<T extends BaseEntity, D extends BaseMapper>
 		extends
@@ -37,6 +34,7 @@ public abstract class BaseDao<T extends BaseEntity, D extends BaseMapper>
 	/**
 	 * 删除用户
 	 * @param id 需要删除的id
+	 * @return 删除结果
 	 */
 	public int delete(int id) {
 		return mapper.deleteByPrimaryKey(id);

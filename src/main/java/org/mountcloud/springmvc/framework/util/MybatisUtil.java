@@ -7,13 +7,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 
-* @Title: MybatisUtil.java 
-* @Package com.coconet.common.util.mybatis 
-* @Description: TODO Mybatis工具类，可以自动设置Example等
-* @author zhanghaishan
-* @date 2017年8月22日 下午5:04:25 
-* @version V1.0
+ * Mybatis工具类，可以自动设置Example等
+ * @author zhanghaishan
+ * @version V1.0
+ * date 2017年8月22日 下午5:04:25
  */
 public class MybatisUtil {
 	

@@ -1,13 +1,11 @@
 package org.mountcloud.springmvc.framework;
 
 /**
+ * 返回的总结构
  * @author zhanghaishan
  * @version V1.0
- * @Package com.ugirls.common
- * @Description: TODO
- * @date 2017/12/20.
+ * date 2017/12/20.
  */
-
 import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement(name = "RestfulResult")

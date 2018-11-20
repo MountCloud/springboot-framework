@@ -1,12 +1,10 @@
 package org.mountcloud.springmvc.framework;
 
 /**
- * TODO: 返回的data结构
- * com.ugirls.statisticalservice.common
- * 2018/11/12.
- *
+ * 返回的data结构
  * @author zhanghaishan
  * @version V1.0
+ * date 2018/11/12.
  */
 public class RestfulData<T> {
     /**
