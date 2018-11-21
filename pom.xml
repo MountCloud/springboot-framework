@@ -16,7 +16,7 @@
   <description>A spring boot framework</description>
 
   <!-- 项目包类型 -->
-  <packaging>jar</packaging>
+  <packaging>pom</packaging>
 
   <!-- 声明license -->
   <licenses>
