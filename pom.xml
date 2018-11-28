@@ -12,7 +12,7 @@
   <!-- jar包详情 -->
   <groupId>org.mountcloud</groupId>
   <artifactId>springboot-framework</artifactId>
-  <version>1.5.9.RELEASE</version>
+  <version>1.5.9.RELEASE.1.0</version>
   <description>A spring boot framework</description>
 
   <!-- 项目包类型 -->
