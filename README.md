@@ -1,8 +1,8 @@
-#English
+# English
 
-##Description
+## Description
 
-&ensp;&ensp;The springboot version used by this framework is 1.5.9.RELEASE. This framework encapsulates mongodb and mybatis. You can use this framework to quickly build a springboot application.
+&ensp;&ensp;The framework has not been completely split and will be released after the split is completed.The springboot version used by this framework is 1.5.9.RELEASE. This framework encapsulates mongodb and mybatis. You can use this framework to quickly build a springboot application.
 
 Features:
 
@@ -10,20 +10,20 @@ Features:
 
 2: The framework perfectly supports multiple data sources.
 
-##Demo
+## Demo
 
 Will be displayed after the framework is released to the maven public repository.
 
-##Other
+## Other
 
 &ensp;&ensp;A plugin for mybatis generator is used in the project [https://github.com/MountCloud/mybatisplugin](https://github.com/MountCloud/mybatisplugin "https://github.com/MountCloud/mybatisplugin"). Welcome to this plugin. This plugin enriches the functionality of mybatis generator, making mybatis easier to operate.
 
 
-#中文
+# 中文
 
-##描述
+## 描述
 
-&ensp;&ensp;这个框架使用的springboot版本是1.5.9.RELEASE，这个框架封装了mongodb和mybatis，可以使用此框架快速的搭建起一个springboot的应用。
+&ensp;&ensp;框架还未完全单独拆分完成，拆分完成后将发布出来。这个框架使用的springboot版本是1.5.9.RELEASE，这个框架封装了mongodb和mybatis，可以使用此框架快速的搭建起一个springboot的应用。
 
 特点：
 
@@ -31,10 +31,10 @@ Will be displayed after the framework is released to the maven public repository
 
 2：框架完美的支持了多数据源。
 
-##案例
+## 案例
 
 在这个框架发布至maven公共仓库后将展示出来。
 
-##其他
+## 其他
 
 &ensp;&ensp;项目中使用了mybatis generator的一个插件[https://github.com/MountCloud/mybatisplugin](https://github.com/MountCloud/mybatisplugin "https://github.com/MountCloud/mybatisplugin")，欢迎关注此插件。这个插件丰富了mybatis generator的功能，让mybatis的操作更加便捷
